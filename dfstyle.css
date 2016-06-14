@@ -1,0 +1,228 @@
+/*
+Changes current font. Hopefully works everywhere.
+Original font is from
+http://www.izaksmells.com/2012/06/dwarf-fortress-ttf-font-download.html
+New versions for IE, etc. generated from
+http://www.fontsquirrel.com/tools/webfont-generator
+*/
+@font-face {
+	font-family: dfvan;
+	src: url("fonts/dwarffortressvan-webfont.eot");
+    src: local("dfvan"), local("dfvan"), url("fonts/DwarfFortressVan.ttf") format("truetype"), url("fonts/dwarffortressvan-webfont.svg#font") format("svg");
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/*Contains everything */
+#bodyContainer {
+	position: relative;
+	width: 800px;
+	min-height:100%;
+	height:auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color:black;
+}
+
+/*Just the text and images of a page. Sizable?*/
+#contentContainer {
+	position: relative;
+	width: 95%;
+	height:auto;
+	margin: auto;
+	display: block;
+	padding-bottom:100px;
+	color: #FFFFFF;
+	font-size: larger;
+	text-align: justify;
+	text-justify: distribute;
+}
+
+/*centers all figures */
+#figure {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*img tag for figures */
+#figure img {
+	width: 100%;
+	height: auto;
+}
+
+/*caption text for figures */
+#figure p {
+	color: #D3FF00;
+	font-size: large;
+	font-style: italic;
+	text-align: center;
+	text-indent: 0px;
+	width: 100%;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	width: 800px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-collapse:collapse;	/*Removes	*/
+	border-spacing: 0;			/*padding	*/
+	margin-left: auto;
+    margin-right: auto;
+	color: #FFFFFF;
+	text-align:center;
+}
+
+#guide{
+	margin-top: 10px;
+	float: right;
+	width: 600px;
+	display: block;
+}
+
+#guide p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*!DF Cookbook! image */
+#headerimage {
+	background: #000 url("logo.png");
+	height: 150px;
+}
+
+/*Style for current page nav tab*/
+#highlighted {
+	background: #BF30BF;
+	color: #FF73FF;
+}
+
+/*Navigation table */
+#navTable {
+	width: 800px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-collapse:collapse;	/*Removes	*/
+	border-spacing: 0;			/*padding	*/
+	margin-left: auto;
+    margin-right: auto;
+	font-size: xx-large;
+	color: #FF00FF;
+}
+
+/*Styles for the text in the navTable*/
+#navTable a {
+	color: #FF00FF;
+	text-decoration: none;
+	display: block;
+}
+
+/*Hovering over links in navTable changes colors*/
+#navTable a:hover{
+	background: #A600A6;
+	color: #FF73FF;
+}
+
+/*Sets width and spacing for rows in the navTable*/
+#navTable td, th {
+	padding: 0px;
+	width: 33%;
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+}
+
+#probHeader {
+	width: 600px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-collapse:collapse;	/*Removes	*/
+	border-spacing: 0;			/*padding	*/
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#probHeader img{
+	width: 50px;
+}
+
+#probHeaderText{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #74FF00;
+	font-size: xx-large; 
+}
+
+#TOC {
+	float: left;
+	width: 150px;
+	display: block;
+	margin-top: 10px;
+	border-style: double;
+	border-width: 5px;
+	text-align: left;
+	padding:0px;
+}
+
+#TOC ol {
+	list-style-position: inside;
+	margin-left: 0px;
+	padding-left: 1em;
+	font-size: small;
+	text-indent: 0px;
+}
+
+/*wut */
+html {
+	min-height: 100%;
+	height:100%;
+	margin-bottom: 1px;
+}
+
+/*Normal text links*/
+a {
+	color: #FF00FF;
+	text-decoration: none;
+}
+
+/*Normal text hover effect*/
+a:hover{
+	background: #A600A6;
+	color: #FF73FF;
+}
+
+body {
+	min-height:100%;
+	background-color: #000000;
+	background-image: url("images/background1.png");
+	background-attachment: fixed;
+	font-family: dfvan;
+	height:100%;
+}
+
+/*Use <b> for any keystrokes
+Changes color only*/
+b {
+	color: #D3FF00;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	color: #74FF00;
+}
+
+ul {
+	list-style: url("images/bullet.png") inside;
+}

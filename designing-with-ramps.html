@@ -1,0 +1,47 @@
+<html>
+<header>
+<title>Designing with Ramps</title>
+<link rel="stylesheet" type="text/css" href="dfstyle.css" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+</header>
+<body>
+	<div id="bodyContainer">
+		<div id="headerImage"></div>
+		<table id="navTable">
+		<tr>
+		<td><a href="index.html">Home</a></td>
+		<td><a href="guides.html">Guides</a></td>
+		<td><a href="about.html">About</a></td>
+		</tr>
+		</table>
+		<div id="contentContainer">
+			<h1><a id="top"></a>Designing with Ramps</h1>
+			<p>The most common element in every fortress is a central up/down stair, usually 3x3. It's almost always the first thing seen in any Let's Play, stream, or tutorial video. As a learning tool, it's fantastic. It's simple, requires little planning, and gets the job done.</p>
+			<p>The problem with a central stair is pathing. Central stairs are calculation hogs, plain and simple. For a fort larger than forty to sixty dwarves with multiple important z-levels, the extra pathing calculations are huge. Pathing, even with proper traffic designations, is a serious contributor to FPS death.</p>
+			
+			<h2>How do ramps work?</h2>
+			<div id="figure" style="width:400px;">
+				<img src="images/ramp-diagram.png" />
+				<p>Green is accessible, red inaccessible</p>
+			</div>
+			<p>Unlike stairs, ramps require at least one tile of wall behind the ramp in a cardinal direction (North, South, East, West). As the picture above shows, the tiles to the upper right are the only accessible, as the wall is behind the ramp in that direction. Without the wall, the ramp won't work. If the only wall is diagonally placed, the ramp won't work. If there are walls blocking all the green tiles in the image, the ramp won't work.</p>
+			
+			<h2>How do I replace the central stair?</h2>
+			
+			<p>Good ramp design requires staggering and assymmetric z-level layout. Extra planning is important. The goal isn't to completely remove the central staircase; it's to replace high-traffic stairs with ramps. Where are the important zones of your fort? Do you have everything within a certain set of z-levels? Do you have main floors near caverns and magma?</p>
+			<p>Whatever you use, it's important to minimize the use of stairs. Stairs covering large numbers of z-levels are unavoidable, especially when breaching the caverns or reaching magma. If your design isn't centralized, you'll need to use burrows to limit traffic from main level to main level, with chutes or carts transporting supplies. Stairs that go nowhere, such as from a workshop room to a supply room, are often low traffic and don't need to be replaced with ramps, but a bit more planning can remove even these.</p>
+			<ul>
+			<li></li>
+			</ul>
+			
+			<h2>Further Reading</h2>
+			<ul>
+			<li><a href="http://www.reddit.com/r/dwarffortress/comments/14sfm9/at_point_is_fps_death_for_you/c7g598q" target="_blank">u/rooly explains the problem with stairs</a></li>
+			(This isn't the only source, just the most recent I've encountered with a decent explanation.)
+			<li><a href="http://dwarffortresswiki.org/index.php/Ramp" target="_blank">Ramps at the DF Wiki</a></li>
+			</ul>
+			<p><a href="#top">Top</a></p>
+		</div>
+	</div>
+</body>
+</html>

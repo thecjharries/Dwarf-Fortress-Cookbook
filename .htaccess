@@ -1,0 +1,2 @@
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+ErrorDocument 400 /error.phpErrorDocument 401 /error.phpErrorDocument 403 /error.phpErrorDocument 404 /error.phpErrorDocument 500 /error.php
